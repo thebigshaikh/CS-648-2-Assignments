@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jainamcsheth/assignment1.git"
+    "url": ""
   },
-  "author": "Jainam Sheth",
+  "author": "Basil Shaikh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jainamcsheth/assignment1/issues"
+    "url": "https://github.com/thebigshaikh/CS-648-2-Assignments"
   },
-  "homepage": "https://github.com/jainamcsheth/assignment1#readme",
+  "homepage": "https://github.com/thebigshaikh/CS-648-2-Assignments",
   "dependencies": {
     "express": "^4.17.1"
   },
