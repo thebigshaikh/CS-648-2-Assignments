@@ -4,7 +4,7 @@ const { MongoClient } = require('mongodb');
 require('dotenv').config();
 
 let db;
-const url = process.env.DB_URL || 'mongodb+srv://basil:bs12345@cluster0-kblzo.mongodb.net/inventory?retryWrites=true&w=majority';
+const url = process.env.DB_URL || 'mongodb+srv://basil:password12345@cluster0.buict.mongodb.net/inventory?retryWrites=true&w=majority';
 
 async function connectToDb() {
   const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -15,7 +15,7 @@ async function connectToDb() {
 
 async function getNextSequence(name) {
   const result = await db.collection('counters').findOneAndUpdate(
-    { _id: name },
+    {},
     { $inc: { current: 1 } },
     { returnOriginal: false },
   );
